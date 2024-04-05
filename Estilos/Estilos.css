@@ -47,6 +47,21 @@ h1 {
   font-style: italic;
   font-family: "Josefin Sans", sans-serif;
   font-size: 60px;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 5px black;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-delay: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes aparecer{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
 
 .descripcion {
@@ -87,7 +102,21 @@ h1 {
   border: 5px solid teal;
   padding: 15px;
   border-radius: 40px;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-delay: 0,5s;
+  animation-direction: alternate;
+  animation-iteration-count: initial;
 }
+@keyframes aparecer{
+  from{
+  opacity: 0;
+  }
+  to{
+  opacity: 1;
+  } 
+}
+
 
 .caracteristica2 {
   margin-left: 40px;
@@ -100,7 +129,21 @@ h1 {
   padding: 15px;
   border-radius: 40px;
   text-align: center;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-delay: 0,5s;
+  animation-direction: alternate;
+  animation-iteration-count: initial;
 }
+@keyframes aparecer{
+  from{
+  opacity: 0;
+  }
+  to{
+  opacity: 1;
+  } 
+}
+
 
 .caracteristica3 {
   margin-left: 40px;
@@ -113,13 +156,24 @@ h1 {
   padding: 15px;
   border-radius: 40px;
   text-align: center;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-delay: 0,5s;
+  animation-direction: alternate;
+  animation-iteration-count: initial;
+}
+@keyframes aparecer{
+  from{
+  opacity: 0;
+  }
+  to{
+  opacity: 1;
+  } 
 }
 
-.imagen {
-  float: right;
-  margin-right: 90px;
-  margin-bottom: 700px;
-}
+
+
+
 
 .tituloelementos {
   text-align: center;
