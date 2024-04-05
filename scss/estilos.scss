@@ -4,15 +4,19 @@
     box-sizing: border-box;
 }
 
+//Paleta de colores
+$color1:aquamarine;
+$color2: teal;
+
 body{
     background-color: gainsboro;
 }
 
 
 header{
-    height: 80px;
+    height: 30px;
     width: 100%;
-    background-color: aquamarine;
+    background-color: $color1;
     padding: 20px;
     font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -23,10 +27,6 @@ header{
     font-size: x-large;
     float: left;
     font-weight: bold;
-}
-
-.barra{
-    float: right;
 }
 
 .barra ul li{
@@ -42,11 +42,11 @@ header{
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
 
-
+/*Inicio*/
 h1{
     text-align: center;
     margin-top: 100px;
-    color: teal;
+    color: $color2;
     font-style: italic;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 60px;
@@ -65,7 +65,7 @@ h1{
 }
 
 .titulo h2{
-    color:teal;
+    color: $color2;
     margin-left: 70px;
     margin-top: 70px;   
     font-style: italic;
@@ -86,9 +86,8 @@ h1{
     font-size: 20px;
     font-weight: bolder;
     width: 40%;
-    float: right;
-    border: 5px solid teal;
-    padding: 15px;
+    border: 5px solid $color2;
+    padding: 15px; 
     border-radius: 40px;
 }
 
@@ -99,23 +98,14 @@ h1{
     font-size: 20px;
     font-weight: bolder;
     width: 40%;
-    border: 5px solid teal;
+    border: 5px solid $color2;
     padding: 15px;
     border-radius: 40px;
     text-align: center;
 }
 
 .caracteristica3{
-    margin-left: 40px;
-    margin-top: 100px;
-    text-align: left;
-    font-size: 20px;
-    font-weight: bolder;
-    width: 40%;
-    border: 5px solid teal;
-    padding: 15px;
-    border-radius: 40px;
-    text-align: center;
+    @extend .caracteristica2;
 }
 
 .imagen{
@@ -124,19 +114,23 @@ h1{
     margin-bottom: 700px;
 }
 
+/*Elementos*/
+
 .tituloelementos{
     text-align: center;
     margin-top: 100px;
-    color: teal;
+    color: $color2;
     font-style: italic;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 100px;
 }
 
+/*Deportes*/
+
 .titulodeportes{
     text-align: center;
     margin-top: 100px;
-    color: teal;
+    color: $color2;
     font-style: italic;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 40px;
@@ -149,21 +143,19 @@ h1{
 }
 
 .deporte2{
-    text-align: center;
-    font-size: 40px;
-    margin-top: 70px;
+@extend .deporte3;
 }
 
 .deporte1{
-    text-align: center;
-    font-size: 40px;
-    margin-top: 70px;
+@extend .deporte3;
 }
+
+/*Equipos*/
 
 .tituloequipos{
     text-align: center;
     margin-top: 100px;
-    color: teal;
+    color: $color2;
     font-style: italic;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 60px;
@@ -174,6 +166,8 @@ h1{
     margin-top: 50px;
     color: black;
 }
+
+/*Contacto*/
 
 form{
     display: grid;
@@ -188,7 +182,7 @@ form input{
 .titulocontacto{
     text-align: center;
     margin-top: 100px;
-    color: teal;
+    color: $color2;
     font-style: italic;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 40px;
@@ -196,7 +190,7 @@ form input{
 
 .subtitulo{
     text-align: center;
-    color: teal;
+    color: $color2;
     font-style: italic;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 30px;
@@ -229,7 +223,7 @@ footer{
 }
 
 .redesf a{
-    color: aquamarine;
+    color: $color1;
     text-decoration: none;
     font-size: 40px;
 }
